@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Sort Without Articles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+  <div class="buttons">
+    <button id="srt">Sort()</button>
+    <button id="rst">Reset</button>
+    <ul id="bands"></ul>
+  </div>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      min-height: 100vh;
-    }
+  <p class="contact">
+    <a href="https://www.linkedin.com/in/hassanelgallouchi/" target="_blanck"><i class="fab fa-linkedin"></i> Linkedin</a>
+    <a href="https://github.com/HassanElgallouchi" target="_blanck"><i class="fab fa-github-square"></i> Github</a>
+  </p>
 
-    #bands {
-      list-style: inside square;
-      font-size: 20px;
-      background: white;
-      width: 500px;
-      margin: auto;
-      padding: 0;
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
-    }
-    
-    #bands li {
-      border-bottom: 1px solid #efefef;
-      padding: 20px;
-    }
-    
-    #bands li:last-child {
-      border-bottom: 0;
-    }
-
-    a {
-      color: #ffc600;
-      text-decoration: none;
-    }
-
-  </style>
-
-  <ul id="bands"></ul>
-
-<script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+  <script>
+    const bands = [
+      'The Javascript',
+      'Developer',
+      'Web Developer',
+      'The Open Source',
+      'HTML / CSS',
+      'A Python developer',
+      'Object Oriented Programming',
+      'Front End',
+      'A Desinger',
+      'An Django Developer',
+      'Back End',
+      'A Coder'
+    ];
 
 
-</script>
+  </script>
+  <script src="./js/script.js"></script>
 
 </body>
+
 </html>
