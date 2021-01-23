@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
@@ -57,27 +59,9 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-  // déclarer une variable avec tout les éléments audio
-  let audios = document.querySelectorAll('audio');
-  
-  // boucler sur les éléments audio
-  for (let index = 0; index < audios.length; index++) {
-    
-    // creer un écouteur sur sur chaque evenement de keydown
-    document.addEventListener('keydown', (event) => {
-
-      // vérifier si key code de levent est égale à le key-data dans chaque élément dans le tableau [audio] 
-      if(event.keyCode == audios[index].getAttribute('data-key')) {
-
-        // chaque élément qui correspond, jouer le son
-        audios[index].play()
-      }
-    })
-  }
-    
-</script>
+  <script src="./script.js"></script>
 
 
 </body>
+
 </html>
